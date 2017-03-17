@@ -26,6 +26,8 @@
 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
 ```
 
+安装成功！
+
 接着我们安装appium-doctor来看看我们的appium环境怎么样
 
 ```
@@ -46,7 +48,7 @@ appium-doctor
 ```
 brew install carthage
 vim ~/.bash_profile
-添加一下内容
+添加以下内容
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASS_PATH=$JAVA_HOME/lib
@@ -76,4 +78,22 @@ info AppiumDoctor
 ']
 ```
 会出现这个错误。
+
+[使用这里的方法（超级详细！）](http://stackoverflow.com/questions/40129794/how-to-fix-error-could-not-detect-mac-os-x-version-from-sw-vers-output-10-12)
+
+```
+➜  ~ vim /Applications/Appium.app//Contents/Resources/node_modules/appium/node_modules/appium-support/build/lib/system.js
+➜  ~ vim /Applications/Appium.app//Contents/Resources/node_modules/appium/node_modules/appium-support/lib/system.js
+➜  ~ vim /Applications/Appium.app//Contents/Resources/node_modules/appium-support/build/lib/system.js
+➜  ~ vim /Applications/Appium.app//Contents/Resources/node_modules/appium-support/lib/system.js
+...
+```
+
+之后，再次运行doctor
+![](./doctorIcon.png)
+
+搞定！
+![](./successImage.png)
+
+
 
