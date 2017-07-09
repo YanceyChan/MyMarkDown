@@ -3,7 +3,7 @@
 具体的请百度吧。
 ###开始安装
 ####方法1
- * 首先要安装node.js
+ * 首先要安装node.js  (建议用nvm控制node版本，删除原来安装的node，再用nvm下载要用的版本 2017.6.25 添加）
  
  ```
  brew install node
