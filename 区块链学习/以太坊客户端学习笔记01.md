@@ -34,7 +34,7 @@ geth -h
  --rinkeby		Rinkeby network: pre-configured proof-of-authority test network
  ```
 	
-* 开发模式  开发模式下，不会同步公有链上的区块（我同步下来了差不多60G..太大了，而且慢）（注意：测试和开发环境参数不用同时使用）
+* 开发模式  开发模式下，只有一个节点，不会同步公有链上的区块（我同步下来了差不多60G..太大了，而且慢）（注意：测试和开发环境参数不用同时使用）
 	
  ```
  --dev		Developer mode: pre-configured private network with several debugging flags
