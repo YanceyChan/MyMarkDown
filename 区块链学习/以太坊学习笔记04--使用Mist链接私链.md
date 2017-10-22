@@ -61,3 +61,15 @@ Mist 的GitHub地址[https://github.com/ethereum/mist](https://github.com/ethere
 => Started MongoDB.
 ```
 
+## 启动Mist并连接到私链
+
+```
+//进入mist文件夹
+cd mist/interface && meteor --no-release-check
+//启动私链 并获取ipc地址：IPC endpoint opened: /Users/用户/Documents/ethereum_test/private1/geth.ipc
+
+//另外打开一个终端，进入mist文件夹
+electron . --rpc /Users/用户/Documents/ethereum_test/private1/geth.ipc
+```
+
+
